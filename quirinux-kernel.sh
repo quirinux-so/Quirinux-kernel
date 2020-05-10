@@ -1,7 +1,7 @@
 #!/bin/bash
 # quirinux-kernel.sh
 
-# Programado por Charlie Martínez (Carlos Mariano Martínez Bourio)
+# Programado por Charlie Martínez (Carlos Mariano Martínez Bourio).
 
 # Sitio oficial: www.quirinux.org
 # Contacto directo: cmartinez@quirinux.org
