@@ -42,11 +42,11 @@ echo "# Installation du nouveau noyau"; sleep 1s
 
 for packages_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $packages_kernel; done
 sudo apt-get install -f
-echo "# Kernel installed"; sleep 1s
+echo "# Noyau installé. Vous pouvez redémarrer pour appliquer les modifications."; sleep 1s
 )|
 
 zenity --progress --pulsate 
-echo " Vous pouvez redémarrer pour appliquer les modifications."
+sudo rm /etc/apt/sources.list.d/kernel-avlinux.list
 title="Quirinux"
 percentage=0
 ;;
@@ -55,7 +55,6 @@ percentage=0
 
 	exit 0
 ;; 
-esac 
-	done
-	
-	
+
+esac
+  
