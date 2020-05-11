@@ -48,7 +48,7 @@ case $opc in
 (
 echo "# Agregando respositorios"; sleep 1s
 
-# Generando el archivo de repositorios de AVL:
+# GENERANDO EL ARCHIVO DE REPOSITORIOS DE AVL:
 
 sudo rm /etc/apt/sources.list.d/kernel-avlinux.list
 sudo touch /etc/apt/sources.list.d/kernel-avlinux.list
@@ -56,7 +56,7 @@ echo "# AV Linux" >> /etc/apt/sources.list.d/kernel-avlinux.list
 echo " " >> /etc/apt/sources.list.d/kernel-avlinux.list
 echo "deb [ trusted=yes ] http://www.bandshed.net/kernels/apt/ buster main" >> /etc/apt/sources.list.d/kernel-avlinux.list
 
-# Instalando el Kernel de AVL
+# INSTALANDO EL KERNEL AVL
 
 echo "# Actualizando fuentes"; sleep 1s
 sudo apt-get update -y
