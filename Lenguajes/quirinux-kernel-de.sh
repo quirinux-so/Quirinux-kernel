@@ -42,11 +42,11 @@ echo "# Instalando el nuevo kernel"; sleep 1s
 
 for pakete_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $pakete_kernel; done
 sudo apt-get install -f
-echo "# Kernel installiert"; sleep 1s
+echo "# Kernel installiert. Sie können neu starten, um die Änderungen zu übernehmen."; sleep 1s
 )|
 
 zenity --progress --pulsate 
-echo " Sie können neu starten, um Änderungen anzuwenden."
+sudo rm /etc/apt/sources.list.d/kernel-avlinux.list
 title="Quirinux"
 percentage=0
 ;;
@@ -55,6 +55,6 @@ percentage=0
 
 	exit 0
 ;; 
-esac 
-	done
+
+esac
   
