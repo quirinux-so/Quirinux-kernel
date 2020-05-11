@@ -1,5 +1,5 @@
 # Quirinux-Kernel (deutsch)
-Autor: Charlie Martínez (Carlos Mariano Martínez Bourio).
+Autor: Charlie Martínez (Carlos Mariano Martínez Bourio)
 ## Über dieses Repository
 Dieses Programm wird verwendet, um den von Trulan Martin kompilierten Linux AVL Kernel 5.4.28 mit niedriger Latenz zu installieren, indem man ihn von seinem offiziellen Repository herunterlädt. Dieser Kernel ist standardmäßig in Quirinux 2.0 in den Editionen Pro, i-Pro, Mini, General und Custom installiert. 
 ### Abhängigkeiten
