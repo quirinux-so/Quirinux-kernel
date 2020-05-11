@@ -17,4 +17,3 @@ Dieses GitHub-Repository ist keine Billigung von GitHub durch Charlie Martinez o
 Der Autor von Quirinux ist nicht Teil des Debian-Entwicklerteams und Quirinux ist keine offizielle Debian-Distribution, sondern ein darauf aufbauendes Derivat ohne Zusammenarbeit. 
 Der Autor von Quirinux nimmt als Testbenutzer teil und bringt Vorschläge in Projekte wie Franco Conidis Systemback-Gabel, OpenToonz und TupiTube ein, Anwendungen, die standardmäßig in Quirinux enthalten sind, er ist jedoch nicht Teil des Entwicklungsteams solcher Anwendungen oder anderer, außer denen, die speziell in den Repositories angegeben sind.
 
-Übersetzt mit www.DeepL.com/Translator (kostenlose Version)
