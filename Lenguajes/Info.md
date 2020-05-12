@@ -19,3 +19,4 @@ Questa cartella contiene i file del codice sorgente del programma con commenti t
 
 #### Português
 Esta pasta contém os arquivos de código-fonte do programa com comentários traduzidos para vários idiomas, bem como a tradução do arquivo README.md.
+
