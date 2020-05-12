@@ -20,29 +20,34 @@ opc=$(zenity --width=350 --height=220 --title=Quirinux --entry --text="
 	             2) Quitter
 "
 )
+
 case $opc in
 
 "1") 
 
 (
-echo "# Ajout de dépôt"; sleep 1s
 
-# GÉNÉRER LE FICHIER DE LISTE DE DÉPÔT AVL
+# INSTALLATION DES DÉPENDANCES
 
-sudo touch /etc/apt/sources.list.d/kernel-avlinux.list
-echo "# AV Linux" >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo " " >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo "deb [ trusted=yes ] http://www.bandshed.net/kernels/apt/ buster main" >> /etc/apt/sources.list.d/kernel-avlinux.list
-
-# INSTALLER LE KERNEL AVL
-
-echo "# Mise à jour des sources"; sleep 1s
+echo "# Mise à jour de la liste des sources"; sleep 1s
 sudo apt-get update -y
-echo "# Installation du nouveau noyau"; sleep 1s
 
-for packages_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $packages_kernel; done
+echo "# Installation des dépendances"; sleep 1s
+for paquetes_dependencias in zenity wget; do sudo apt-get install -y $paquetes_dependencias; done
 sudo apt-get install -f
-echo "# Noyau installé. Vous pouvez redémarrer pour appliquer les modifications."; sleep 1s
+
+# INSTALLATION DU KERNEL AVL
+
+echo "# Téléchargement du noyau"; sleep 1s
+wget https://cloud.astian.org/index.php/s/AWtTbWF6rXYkny8/download -O linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Téléchargement des en-têtes du noyau"; sleep 1s
+wget https://cloud.astian.org/index.php/s/M4HR74qXGbwWTBy/download -O linux-headers-5.4.28avl2-lowlatency.deb
+
+echo "# Installation du nouveau noyau"; sleep 1s
+sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Kernel installé. Vous pouvez redémarrer pour appliquer les modifications."; sleep 1s
 )|
 
 zenity --progress --pulsate 
@@ -57,4 +62,3 @@ percentage=0
 ;; 
 
 esac
-  
