@@ -4,6 +4,7 @@ Autor: Charlie Martínez (Carlos Mariano Martínez Bourio)
 Dieses Programm wird verwendet, um den von Trulan Martin kompilierten Linux AVL Kernel 5.4.28 mit niedriger Latenz zu installieren, indem man ihn von seinem offiziellen Repository herunterlädt. Dieser Kernel ist standardmäßig in Quirinux 2.0 in den Editionen Pro, i-Pro, Mini, General und Custom installiert. 
 ### Abhängigkeiten
 zenity
+wget
 ### Kompatibilität
 Erfolgreich getestet auf Debian 10.3. 
 ### Anweisungen
