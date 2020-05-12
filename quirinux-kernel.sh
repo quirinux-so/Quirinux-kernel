@@ -1,23 +1,3 @@
-#!/bin/bash
-# quirinux-kernel.sh
-
-# Programado por Charlie Martínez (Carlos Mariano Martínez Bourio).
-
-# Sitio oficial: www.quirinux.org
-# Contacto directo: cmartinez@quirinux.org
-# https://github.com/quirinux-so
-
-# Licencia GPL Versión 3 
-# https://github.com/quirinux-so/quirinux-kernel/blob/master/LICENCE
-
-# GENERAR EL MENÚ GRÁFICO CON ZENITY
-
-opc=$(zenity --width=350 --height=220 --title=Quirinux --entry --text="        
-              Instalación del Kernel AVL 5.4.28
-              de baja latencia de Trulan Martin
-
-              Introduce una opción: 
-#!/bin/bash
 # quirinux-kernel.sh
 
 # Programado por Charlie Martínez (Carlos Mariano Martínez Bourio).
@@ -46,14 +26,14 @@ case $opc in
 "1") 
 
 (
-echo "# Agregando respositorios"; sleep 1s
 
 # INSTALANDO DEPENDENCIAS
 
 echo "# Actualizando lista de fuentes"; sleep 1s
 sudo apt-get update -y
+
 echo "# Instalando dependencias"; sleep 1s
-for paquetes_kernel in zenity wget; do sudo apt-get install -y $paquetes_kernel; done
+for paquetes_dependencias in zenity wget; do sudo apt-get install -y $paquetes_dependencias; done
 sudo apt-get install -f
 
 # INSTALANDO EL KERNEL AVL
@@ -82,4 +62,4 @@ percentage=0
 ;; 
 
 esac
-	
+
