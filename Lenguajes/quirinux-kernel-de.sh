@@ -25,6 +25,7 @@ case $opc in
 "1") 
 
 (
+
 # ABHÄNGIGKEITEN INSTALLIEREN
 
 echo "# Quellliste aktualisieren"; sleep 1s
