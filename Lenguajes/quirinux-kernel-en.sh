@@ -25,24 +25,27 @@ case $opc in
 "1") 
 
 (
-echo "# Adding repositories"; sleep 1s
+# INSTALLING DEPENDENCIES
 
-# GENERATE THE AVL REPOSITORY LIST FILE
-
-sudo touch /etc/apt/sources.list.d/kernel-avlinux.list
-echo "# AV Linux" >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo " " >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo "deb [ trusted=yes ] http://www.bandshed.net/kernels/apt/ buster main" >> /etc/apt/sources.list.d/kernel-avlinux.list
-
-# INSTALL THE KERNEL AVL
-
-echo "# Updating sources"; sleep 1s
+echo "# Updating source list"; sleep 1s
 sudo apt-get update -y
-echo "# Installing the new kernel"; sleep 1s
 
-for packages_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $packages_kernel; done
+echo "# Installing dependencies"; sleep 1s
+for paquetes_dependencias in zenity wget; do sudo apt-get install -y $paquetes_dependencias; done
 sudo apt-get install -f
-echo "# Kernel installed. You can restart to apply the changes."; sleep 1s
+
+# INSTALLING THE KERNEL AVL
+
+echo "# Downloading Kernel"; sleep 1s
+wget https://cloud.astian.org/index.php/s/AWtTbWF6rXYkny8/download -O linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Downloading Kernel Headers"; sleep 1s
+wget https://cloud.astian.org/index.php/s/M4HR74qXGbwWTBy/download -O linux-headers-5.4.28avl2-lowlatency.deb
+
+echo "# Installing the new kernel"; sleep 1s
+sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Kernel installed. You can reboot to apply the changes."; sleep 1s
 )|
 
 zenity --progress --pulsate 
@@ -57,4 +60,3 @@ percentage=0
 ;; 
 
 esac
-  
