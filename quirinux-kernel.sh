@@ -62,7 +62,7 @@ echo "# Actualizando fuentes"; sleep 1s
 sudo apt-get update -y
 echo "# Instalando el nuevo kernel"; sleep 1s
 
-for paquetes_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $paquetes_kernel; done
+for paquetes_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28avl2-lowlatency ; do sudo apt-get install -y $paquetes_kernel; done
 sudo apt-get install -f
 echo "# Kernel instalado. Puedes reiniciar para aplicar los cambios."; sleep 1s
 )|
