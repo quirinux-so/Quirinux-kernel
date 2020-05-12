@@ -20,11 +20,13 @@ opc=$(zenity --width=350 --height=220 --title=Quirinux --entry --text="
 	             2) Exit
 "
 )
+
 case $opc in
 
 "1") 
 
 (
+
 # INSTALLING DEPENDENCIES
 
 echo "# Updating source list"; sleep 1s
