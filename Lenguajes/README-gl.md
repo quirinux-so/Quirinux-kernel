@@ -3,7 +3,8 @@ Autor: Charlie Martínez (Carlos Mariano Martínez Bourio)
 ## Acerca deste repositorio
 Este programa úsase para instalar o núcleo Linux Low Latency AVL 5.4.28 compilado por Trulan Martin, descargándoo dende o seu repositorio oficial. Este núcleo instálase de xeito predeterminado en Quirinux 2.0 nas súas edicións Pro, i-Pro, Mini, Xeral e Custom.
 ### Dependencias
-zenidade
+zenity
+wget
 ### Compatibilidade
 Probouse con éxito en Debian 10.3.
 ### Instrucións
