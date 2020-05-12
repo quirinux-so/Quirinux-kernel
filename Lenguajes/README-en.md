@@ -9,6 +9,8 @@ Successfully tested on Debian 10.3.
 ### Instructions
 sudo chmod 755 quirinux-kernel-en.sh </br>
 sudo ./quirinux-kernel-en.sh
+#### Authors
+Charlie Martínez, using the freedom of distribution of the GPL license, has programmed this graphical installer, but it is not related to the development of the software it installs (Kernel AVL 5.4.28 low latency) or its authors. This installer is also released under the GPLv3 license.
 #### Legal notices
 Charlie Martínez and Quirinux are registered trademarks of Carlos Mariano Martínez Bourio. All the software published here is copyrighted and registered in DNDA and is distributed under license <a href="https://lslspanish.github.io/translation_GPLv3_to_spanish/"> GPLv3 </a>, while all content Artistic accompanying software (icons, wallpapers, etc.) and literary (manuals and texts in general) is distributed under license <a href="https://creativecommons.org/licenses/by/4.0/deed.es"> Creative Commons Recognition 4.0 International </a>. Windows, Mac, GitHub, Debian, TupiTube, OpenToonz, Linux and GNU are registered trademarks of their respective owners.
 You can copy and distribute this material in any medium and format, remix, transform and build new material from it for any purpose, even commercially. It is necessary that you indicate the name of the original author in the credits, in an appropriate way and provide a link to the license, indicating if changes have been made. You may do so in any reasonable way, but not in a way that appears to you or the implementation of this software to be supported by the licensor. You cannot apply legal terms or technological measures that legally restrict others to make any use permitted by the license.
