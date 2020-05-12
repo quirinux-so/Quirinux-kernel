@@ -20,6 +20,7 @@ opc=$(zenity --width=350 --height=220 --title=Quirinux --entry --text="
 	             2) Beenden 
 "
 )
+
 case $opc in
 
 "1") 
