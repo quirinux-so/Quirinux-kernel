@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # quirinux-kernel-gl.sh
 
@@ -26,24 +25,28 @@ case $opc in
 "1") 
 
 (
-echo "# Engadindo repositorios"; sleep 1s
 
-# XERA A FICHA DA LISTA DO REPOSITORIO AVL
+# INSTALACIÓN DEPENDENCIAS
 
-sudo touch /etc/apt/sources.list.d/kernel-avlinux.list
-echo "# AV Linux" >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo " " >> /etc/apt/sources.list.d/kernel-avlinux.list
-echo "deb [ trusted=yes ] http://www.bandshed.net/kernels/apt/ buster main" >> /etc/apt/sources.list.d/kernel-avlinux.list
-
-# INSTALA O AVL DE KERNEL
-
-echo "# Actualización de fontes"; sleep 1s
+echo "# Actualización da lista de fontes"; sleep 1s
 sudo apt-get update -y
-echo "# Instalación do novo núcleo"; sleep 1s
 
-for packages_kernel in linux-image-5.4.28avl2-lowlatency linux-headers-5.4.28-rt19avl2; do sudo apt-get install -y $packages_kernel; done
+echo "# Instalando dependencias"; sleep 1s
+for paquetes_dependencias in zenity wget; do sudo apt-get install -y $paquetes_dependencias; done
 sudo apt-get install -f
-echo "# Kernel instalado. Pode reiniciar para aplicar os cambios."; sleep 1s
+
+# INSTALACIÓN DO AVL DE KERNEL
+
+echo "# Descargando o núcleo"; sleep 1s
+wget https://cloud.astian.org/index.php/s/AWtTbWF6rXYkny8/download -O linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Descargando cabeceiras do núcleo"; sleep 1s
+wget https://cloud.astian.org/index.php/s/M4HR74qXGbwWTBy/download -O linux-headers-5.4.28avl2-lowlatency.deb
+
+echo "# Instalando o novo núcleo"; sleep 1s
+sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
+
+echo "# Kernel instalado. Podes reiniciar para aplicar os cambios."; sleep 1s
 )|
 
 zenity --progress --pulsate 
@@ -58,4 +61,3 @@ percentage=0
 ;; 
 
 esac
-  
