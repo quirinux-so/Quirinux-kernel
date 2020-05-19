@@ -1,7 +1,7 @@
 # Quirinux-Kernel (français)
 Auteur : Charlie Martínez ®
 ## À propos de ce dépôt
-Ce programme est utilisé pour installer le noyau AVL Linux à faible latence 5.4.28 compilé par Trulan Martin, en le téléchargeant depuis son dépôt officiel. Ce noyau est installé par défaut dans Quirinux 2.0 dans ses éditions Pro, i-Pro, Mini, General et Custom. 
+Ce programme est utilisé pour installer le noyau AVL Linux à faible latence 5.4.28 compilé par Trulan Martin, en le téléchargeant automatiquement. Ce noyau est installé par défaut dans Quirinux 2.0 dans ses éditions Pro, i-Pro, Mini, General et Custom. 
 ### Dépendances
 zenity
 wget
