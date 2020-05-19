@@ -1,4 +1,4 @@
-# quirinux-kernel.sh
+# quirinux-kernel.sh 
 
 # Programado por Charlie Martínez ®
 
