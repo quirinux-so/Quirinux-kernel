@@ -1,7 +1,7 @@
 # Quirinux-Kernel (italiano)
 Autore: Charlie Martínez ®
 ## A proposito di questo repository
-Questo programma è usato per installare il Linux AVL Kernel 5.4.28 a bassa latenza compilato da Trulan Martin, scaricandolo dal suo repository ufficiale. Questo kernel è installato di default in Quirinux 2.0 nelle sue edizioni Pro, i-Pro, Mini, General e Custom. 
+Questo programma è usato per installare il Linux AVL Kernel 5.4.28 a bassa latenza compilato da Trulan Martin, scaricandolo automaticamente. Questo kernel è installato di default in Quirinux 2.0 nelle sue edizioni Pro, i-Pro, Mini, General e Custom. 
 ### Dipendenze
 zenity
 wget
