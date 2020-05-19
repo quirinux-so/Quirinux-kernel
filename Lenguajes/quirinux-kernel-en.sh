@@ -1,7 +1,7 @@
 #!/bin/bash
 # quirinux-kernel-en.sh
 
-# Programmed by Charlie Martínez (Carlos Mariano Martínez Bourio).
+# Programmed by Charlie Martínez ®
 
 # Official Site: www.quirinux.org
 # Direct contact: cmartinez@quirinux.org
@@ -39,10 +39,10 @@ sudo apt-get install -f
 # INSTALLING THE KERNEL AVL
 
 echo "# Downloading Kernel"; sleep 1s
-wget https://cloud.astian.org/index.php/s/AWtTbWF6rXYkny8/download -O linux-image-5.4.28avl2-lowlatency.deb
+wget https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf
 
 echo "# Downloading Kernel Headers"; sleep 1s
-wget https://cloud.astian.org/index.php/s/M4HR74qXGbwWTBy/download -O linux-headers-5.4.28avl2-lowlatency.deb
+wget https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf
 
 echo "# Installing the new kernel"; sleep 1s
 sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
