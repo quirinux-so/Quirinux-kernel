@@ -1,7 +1,7 @@
 # Quirinux-Kernel (deutsch)
 Autor: Charlie Martínez ®
 ## Über dieses Repository
-Dieses Programm wird verwendet, um den von Trulan Martin kompilierten Linux AVL 5.4.28-Kernel mit geringer Latenz zu installieren und ihn automatisch aus dem auf Astian.org gehosteten Quirinux-Repository herunterzuladen. Dieser Kernel wird standardmäßig in Quirinux 2.0 in seinen Pro, i-Pro-Editionen installiert. Mini, General und Custom. Bietet eine einfache grafische Oberfläche (GUI), die mit Zenity erstellt wurde.
+Dieses Programm wird verwendet, um den von Trulan Martin kompilierten Linux AVL 5.4.28-Kernel mit geringer Latenz zu installieren und ihn automatisch. Dieser Kernel wird standardmäßig in Quirinux 2.0 in seinen Pro, i-Pro-Editionen installiert. Mini, General und Custom. Bietet eine einfache grafische Oberfläche (GUI), die mit Zenity erstellt wurde.
 ### Abhängigkeiten
 zenity
 wget
