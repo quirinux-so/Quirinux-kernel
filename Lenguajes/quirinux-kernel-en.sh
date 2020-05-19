@@ -38,11 +38,11 @@ sudo apt-get install -f
 
 # INSTALLING THE KERNEL AVL
 
-echo "# Downloading Kernel"; sleep 1s
-wget https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf
+echo "# Download Kernel"; sleep 1s
+wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf' -O linux-image-5.4.28avl2-lowlatency.deb
 
-echo "# Downloading Kernel Headers"; sleep 1s
-wget https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf
+echo "# Dowload Headers"; sleep 1s
+wget  --no-check-certificate 'https://docs.google.com/uc?export=download&id=18YiaU1zTjCzRvZKBRiQCl078LLaQVFoq' O- linux-headers-5.4.28avl2-lowlatency.deb
 
 echo "# Installing the new kernel"; sleep 1s
 sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
