@@ -46,6 +46,7 @@ wget  --no-check-certificate 'https://docs.google.com/uc?export=download&id=18Yi
 
 echo "# Installation du nouveau kernel"; sleep 1s
 sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
+
 echo "# Kernel installé. Vous pouvez redémarrer pour appliquer les modifications."; sleep 1s
 )|
 
