@@ -1,4 +1,4 @@
-### INFO 
+### INFO  
 
 Esta carpeta contiene los archivos del código fuente del programa con comentarios traducidos a diversos idiomas, así como la traducción del archivo README.md
 
