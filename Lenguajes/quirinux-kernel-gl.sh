@@ -43,8 +43,8 @@ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1YX99
 echo "# Dowload Headers"; sleep 1s
 wget  --no-check-certificate 'https://docs.google.com/uc?export=download&id=18YiaU1zTjCzRvZKBRiQCl078LLaQVFoq' -O linux-headers-5.4.28avl2-lowlatency.deb
 
-echo "# Dowload Headers"; sleep 1s
-wget  --no-check-certificate 'https://headersavl.quirinux.org' -O linux-headers-5.4.28avl2-lowlatency.deb
+echo "# Instalación do novo núcleo"; sleep 1s
+sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
 
 echo "# Kernel instalado. Podes reiniciar para aplicar os cambios."; sleep 1s
 )|
