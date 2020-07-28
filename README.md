@@ -8,10 +8,10 @@ wget
 ### Compatibilidad
 Probado con éxito en Debian 10.3, Quirinux 2.0 y Ethertics 10.3.
 ### Instrucciones
-sudo chmod 755 instalar-ardour6.sh </br>
-sudo ./instalar-ardour6.sh
+sudo chmod 755 quirinux-kernel.sh </br>
+sudo ./quirinux-kernel.sh
 #### Autores
-Charlie Martínez, haciendo uso de la libertad de distribución de la licencia GPL, ha programado este instalador gráfico pero no guarda relación con el desarrollo del software que instala (Ardour) ni con sus autores. Este instalador está liberado también bajo licencia GPLv3. 
+Charlie Martínez, haciendo uso de la libertad de distribución de la licencia GPL, ha programado este instalador gráfico pero no guarda relación con el desarrollo del software que instala (Kernel Linux AVL 5.4.28 de baja latencia) ni con sus autores. Este instalador está liberado también bajo licencia GPLv3. 
 #### Avisos legales
 (p) y (c) 2020. Charlie Martínez y Quirinux son marcas registradas. Todo el software aquí publicado está protegido por Derechos de Autor y registrada en DNDA y se distribuye bajo licencia <a href="https://lslspanish.github.io/translation_GPLv3_to_spanish/">GPLv3</a>, mientras que todo el contenido artistico que acompaña al software (íconos, wallpapers, etc) y el literario (manuales y textos en general) es distribuido bajo licencia <a href="https://creativecommons.org/licenses/by/4.0/deed.es">Creative Commons Reconocimiento 4.0 Internacional</a>. Windows, Mac, GitHub, Debian, TupiTube, OpenToonz, Ardour, Linux, GNU  y otras son marcas registradas por sus respectivo dueños.
 # Licencia GPLv3
