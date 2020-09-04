@@ -1,4 +1,4 @@
-# Quirinux-Kernel
+# Quirinux-Kernel-AVL
 Autor: Charlie Martínez ®
 ## Acerca de este repositorio
 Este programa sirve para instalar el Kernel Linux AVL 5.4.28 de baja latencia compilado por Trulan Martin, descargándolo automáticamente. Este núcleo viene instalado por defecto en Quirinux 2.0 en sus ediciones Pro, i-Pro, Mini, General y Custom. Proporciona una intefáz gráfica sencilla (GUI) generada mediante Zenity. 
