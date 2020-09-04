@@ -1,6 +1,8 @@
-# quirinux-kernel.sh 
+#!/bin/bash
 
-# Programado por Charlie Martínez ®
+# instalar-kernel-avl.sh
+
+# Instaladorrogramado por Charlie Martínez ®
 
 # Sitio oficial: www.quirinux.org
 # Contacto directo: cmartinez@quirinux.org
@@ -38,20 +40,28 @@ sudo apt-get install -f
 
 # INSTALANDO EL KERNEL AVL
 
+sudo mkdir /opt/tmp
+
 echo "# Download Kernel"; sleep 1s
-wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1YX99kSMorEWKgTnypg-cVKzF4sFXdIGf' -O linux-image-5.4.28avl2-lowlatency.deb
+wget --no-check-certificate 'http://my.opendesktop.org/s/tybe5FaBMjzts4R/download' -O /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
 
 echo "# Dowload Headers"; sleep 1s
-wget  --no-check-certificate 'https://docs.google.com/uc?export=download&id=18YiaU1zTjCzRvZKBRiQCl078LLaQVFoq' -O linux-headers-5.4.28avl2-lowlatency.deb
+wget  --no-check-certificate 'http://my.opendesktop.org/s/Cx43SWj4w7LrTiY/download' -O /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb
+
+sudo chmod 777 -R /opt/tmp/
+sudo chown $USER /opt/tmp/*
 
 echo "# Instalando el nuevo kernel"; sleep 1s
-sudo dpkg -i linux-headers-5.4.28avl2-lowlatency.deb linux-image-5.4.28avl2-lowlatency.deb
+sudo dpkg -i /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb 
+sudo dpkg -i /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
+sudo apt-get remove --purge cryptsetup-initramfs -y
+sudo apt-get autoremove --purge -y
 
 echo "# Kernel instalado. Puedes reiniciar para aplicar los cambios."; sleep 1s
 )|
 
 zenity --progress --pulsate 
-sudo rm /etc/apt/sources.list.d/kernel-avlinux.list
+
 title="Quirinux"
 percentage=0
 ;;
@@ -62,4 +72,3 @@ percentage=0
 ;; 
 
 esac
-
