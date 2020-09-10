@@ -1,15 +1,9 @@
-#!/bin/bash
-
-# instalar-kernel-avl.sh
-
-# Instaladorrogramado por Charlie Martínez ®
-
-# Sitio oficial: www.quirinux.org
-# Contacto directo: cmartinez@quirinux.org
-# https://github.com/quirinux-so
-
-# Licencia GPL Versión 3 
-# https://github.com/quirinux-so/quirinux-kernel/blob/master/LICENCE
+# !/bin/bash
+# Nombre:	instalar-kernel-avl.sh
+# Autor:	Charlie Martínez® <cmartinez@quirinux.org>
+# Licencia:	https://www.gnu.org/licenses/gpl-3.0.txt
+# Descripción:	Instala el kernel AVL 5.4.28 descargándolo desde los repositorios de Quirinux 2.0
+# Versión:	1.00
 
 # Generando el menú gráfico con Zenity:
 
