@@ -4,7 +4,7 @@
 # Autor:	Charlie Martínez® <cmartinez@quirinux.org>
 # Licencia:	https://www.gnu.org/licenses/gpl-3.0.txt
 # Descripción:	Instala el kernel AVL 5.4.28 descargándolo desde los repositorios de Quirinux 2.0
-# Versión:	1.00
+# Versión:	2.0
 
 # Generando el menú gráfico con Zenity:
 
@@ -38,17 +38,21 @@ sudo apt-get install -f
 sudo mkdir /opt/tmp
 
 echo "# Download Kernel"; sleep 1s
-wget --no-check-certificate 'http://my.opendesktop.org/s/tybe5FaBMjzts4R/download' -O /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
+# wget --no-check-certificate 'http://my.opendesktop.org/s/tybe5FaBMjzts4R/download' -O /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
+wget --no-check-certificate 'http://my.opendesktop.org/s/Mtty82em5dKM5na/download' -O /opt/tmp/linux-image-5.9.1avl1-lowlatency_5.9.1avl1-lowlatency-1_amd64.deb
 
 echo "# Dowload Headers"; sleep 1s
-wget  --no-check-certificate 'http://my.opendesktop.org/s/Cx43SWj4w7LrTiY/download' -O /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb
+# wget  --no-check-certificate 'http://my.opendesktop.org/s/Cx43SWj4w7LrTiY/download' -O /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb
+wget  --no-check-certificate 'http://my.opendesktop.org/s/YZ7rnzLZDbTiTN9/download' -O /opt/tmp/linux-headers-5.9.1avl1-lowlatency_5.9.1avl1-lowlatency-1_amd64.deb
 
 sudo chmod 777 -R /opt/tmp/
 sudo chown $USER /opt/tmp/*
 
 echo "# Instalando el nuevo kernel"; sleep 1s
-sudo dpkg -i /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb 
-sudo dpkg -i /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
+# sudo dpkg -i /opt/tmp/linux-image-5.4.28avl2-lowlatency.deb
+# sudo dpkg -i /opt/tmp/linux-headers-5.4.28avl2-lowlatency.deb
+sudo dpkg -i /opt/tmp/linux-headers-5.9.1avl1-lowlatency_5.9.1avl1-lowlatency-1_amd64.deb
+sudo dpkg -i /opt/tmp/linux-image-5.9.1avl1-lowlatency_5.9.1avl1-lowlatency-1_amd64.deb
 sudo apt-get remove --purge cryptsetup-initramfs -y
 sudo apt-get autoremove --purge -y
 
